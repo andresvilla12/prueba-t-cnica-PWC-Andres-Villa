@@ -17,7 +17,7 @@ import { ProductoService } from '../../services/producto.service';
 })
 export class CrearProductoComponent implements OnInit {
   productoForm: FormGroup;
-  titulo = 'Crear producto';
+  titulo = 'Crear Empleado';
   id: string | null;
 
   constructor(

@@ -8,34 +8,34 @@
                 <form class="mt-3" [formGroup]="productoForm" (ngSubmit)="agregarProducto()">
                     <div class="mb-3"> 
                         <input type="text" formControlName="producto"
-                         class="form-control form-control-lg" placeholder="Producto">
+                         class="form-control form-control-lg" placeholder="Id">
                          <div class="text-danger"
                             *ngIf="productoForm.get('producto')?.hasError('required') && productoForm.get('producto')?.touched">
-                            <span>El nombre del producto <strong>es obligatorio</strong></span>
+                            <span>El Id <strong>es obligatorio</strong></span>
                          </div>
                       </div>
                       <div class="mb-3">
                         <input type="text" formControlName="categoría"
-                         class="form-control form-control-lg" placeholder="Categoría">
+                         class="form-control form-control-lg" placeholder="Nombre">
                          <div class="text-danger"
                          *ngIf="productoForm.get('categoría')?.hasError('required') && productoForm.get('categoría')?.touched">
-                         <span>La categoría  <strong>es obligatoria</strong></span>
+                         <span>El Nombre <strong>es obligatorio</strong></span>
                       </div>
                       </div>
                       <div class="mb-3">
                         <input type="text" formControlName="ubicación"
-                         class="form-control form-control-lg" placeholder="Ubicación">
+                         class="form-control form-control-lg" placeholder="Correo">
                          <div class="text-danger"
                          *ngIf="productoForm.get('ubicación')?.hasError('required') && productoForm.get('ubicación')?.touched">
-                         <span>La ubicación <strong>es obligatoria</strong></span>
+                         <span>El correo <strong>es obligatorio</strong></span>
                       </div>
                       </div>
                       <div class="mb-3">
                         <input type="number" formControlName="precio"
-                         class="form-control form-control-lg" placeholder="Precio">
+                         class="form-control form-control-lg" placeholder="Teléfono">
                          <div class="text-danger"
                          *ngIf="productoForm.get('precio')?.hasError('required') && productoForm.get('precio')?.touched">
-                         <span>El precio <strong>es obligatorio</strong></span>
+                         <span>El teléfono <strong>es obligatorio</strong></span>
                       </div>
                       </div>
                       <div class="mb-3">

@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app.routes';
+import { BrowserModule } from '@angular/platform-browser';
+
+
+// COMPONENTES
+
 import { AppComponent } from './app.component';
 import { CrearProductoComponent } from './components/crear-producto/crear-producto.component';
 import { ListarProductosComponent } from './components/listar-productos/listar-productos.component';
-import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
-
-
-
-
 
 
 @NgModule({
@@ -20,12 +19,9 @@ import { CommonModule } from '@angular/common';
   imports: [
    
     AppRoutingModule,
-    BrowserModule,
-    //CommonModule,
-    
-   
-    
+    BrowserModule, 
   ],
+
   providers: [],
   bootstrap: [AppComponent]  // Componente raíz de la aplicación
 })
